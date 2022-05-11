@@ -13,7 +13,7 @@ import node_conn_pb2_grpc as ClientServerModule
 venv_dict = dict(dotenv_values(".env"))
 
 # put here aux functions
-print("iniciando servidor")
+print(f'Iniciando servidor en puerto {venv_dict["PORT"]}')
 
 class LedManipulationServiceServicer(ClientServerModule.LedManipulationServiceServicer):
     """Provides methods that implement functionality of testing server."""
